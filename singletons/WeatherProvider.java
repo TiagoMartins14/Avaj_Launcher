@@ -1,7 +1,7 @@
 package singletons;
 
 public class WeatherProvider {
-	private String[] weather;
+	private String[] weather = {"RAIN", "FOG", "SUN", "SNOW"};
 	private static WeatherProvider instance;
 
 	private WeatherProvider() {}
@@ -13,5 +13,9 @@ public class WeatherProvider {
 		return instance;
 	}
 
-	public getcurrentWeather(Coordinates p_coordinates) {}
+	public getCurrentWeather(Coordinates p_coordinates) {
+		int type = (p_coordinates.getLongitude() + p_coordinates.getLatitude() + p_coordinates.getHeight()) % 4;
+
+		return weather[type];
+	}
 }
