@@ -1,0 +1,49 @@
+package flyables.aircrafts;
+
+public class Coordinates {
+	private int longitude;
+	private int latitude;
+	private int height;
+
+	Coordinates(int p_longitude, int p_latitude, int p_height) {
+		this.longitude = p_longitude;
+		this.latitude = p_latitude;
+		this. height = p_height;
+	}
+
+	// Getters
+	public int getLongitude() {
+		return longitude;
+	}
+
+	public int getLatitude() {
+		return latitude;
+	}
+
+	public int getHeight() {
+		return height;
+	}
+
+	// Setters
+	private void setLongitude(int value) {
+		this.longitude += value;
+	}
+
+	private void setLatitude(int value) {
+		this.latitude += value;
+	}
+
+	private void setHeight(int value) {
+		this.height += value;
+
+		if (height > 100) {
+			height = 100;
+		}
+	}
+
+	public void updateCoordinates(int longitude, int latitude, int height) {
+		this.setLongitude(longitude);
+		this.setLatitude(latitude);
+		this.setHeight(height);
+	}
+}
