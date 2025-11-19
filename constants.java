@@ -1,6 +1,5 @@
 package constants;
 
-
 public interface Constants {
 	// Weather
 	String RAIN = "RAIN";
