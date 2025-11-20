@@ -3,8 +3,6 @@ package simulator;
 import java.io.File;
 import java.util.Scanner;
 
-import singletons.OutputFileWriter;
-
 import static constants.Constants.*;
 
 public class Validator {
