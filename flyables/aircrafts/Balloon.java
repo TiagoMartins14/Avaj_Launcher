@@ -32,5 +32,9 @@ public class Balloon extends Aircraft {
 			this.coordinates.updateCoordinates(0, 0, -15);
 			fileWriter.writeOutput(preMsg + "Brrrrrrrrrrr, I'm freeeeeeezing.");
 		}
+
+		if (this.coordinates.getHeight() <= 0) {
+			this.flying = false;
+		}
 	}
 }

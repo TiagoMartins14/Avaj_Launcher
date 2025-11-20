@@ -31,5 +31,9 @@ public class Helicopter extends Aircraft {
 			this.coordinates.updateCoordinates(0, 0, -12);
 			fileWriter.writeOutput(preMsg + "Brrrrrrrrrrr, I'm freeeeeeezing.");
 		}
+
+		if (this.coordinates.getHeight() <= 0) {
+			this.flying = false;
+		}
 	}
 }

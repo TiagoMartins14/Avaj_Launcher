@@ -31,5 +31,9 @@ public class JetPlane extends Aircraft {
 			this.coordinates.updateCoordinates(0, 0, -7);
 			fileWriter.writeOutput(preMsg + "Brrrrrrrrrrr, I'm freeeeeeezing.");
 		}
+
+		if (this.coordinates.getHeight() <= 0) {
+			this.flying = false;
+		}
 	}
 }
