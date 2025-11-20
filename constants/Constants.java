@@ -11,4 +11,8 @@ public interface Constants {
 	String JETPLANE = "JetPlane";
 	String HELICOPTER = "Helicopter";
 	String BALLOON = "Balloon";
+
+	// Limits
+	int EXPECTED_PARAMS = 5;
+	int MAX_HEIGHT = 100;
 }
