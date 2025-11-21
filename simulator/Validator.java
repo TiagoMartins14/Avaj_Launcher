@@ -27,7 +27,6 @@ public class Validator {
             }
             String firstLine = scanner.nextLine().trim();
             if (!isPositiveLong(firstLine)) {
-                System.out.println("Incorrect file parameter(s).");
                 return false;
             }
             while (scanner.hasNextLine()) {
