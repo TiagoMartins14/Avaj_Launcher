@@ -23,7 +23,7 @@ public class Simulator {
 			try {
         		new FileWriter("simulation.txt", false).close();
     		} catch (IOException e) {
-       			System.out.println("Could not reset simulation.txt");
+       			System.out.println("Could not reset simulation.txt: " + e.getMessage());
     		}
 
 			try (Scanner scanner = new Scanner(scenario)) {
@@ -53,7 +53,7 @@ public class Simulator {
 				}
 			
 			} catch (FileNotFoundException e) {
-				System.out.println("File not found: " + scenario.getName());
+				System.out.println("File '" + scenario.getName() + "' not found: " + e.getMessage());
 			}
 		} 
 	}
