@@ -1,4 +1,4 @@
-# Avaj-Launcher Simulation
+# Avaj_launcher
 
 _A 42 School Java OOP & Design Patterns Advanced Project_
 
