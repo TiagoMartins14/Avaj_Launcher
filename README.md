@@ -6,7 +6,7 @@ _A 42 School Java OOP & Design Patterns Advanced Project_
 
 ## Project Description
 
-**Avaj-Launcher** is an aviation simulation written in Java. It processes a `scenario.txt` file, creates aircraft with initial coordinates, and runs a multi‑cycle simulation where each aircraft reacts dynamically to changing weather conditions.
+**Avaj_launcher** is an aviation simulation written in Java. It processes a `scenario.txt` file, creates aircraft with initial coordinates, and runs a multi‑cycle simulation where each aircraft reacts dynamically to changing weather conditions.
 
 During each simulation step:
 
