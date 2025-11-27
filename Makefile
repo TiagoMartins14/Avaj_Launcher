@@ -9,7 +9,9 @@ sim:
 
 clean:
 	find . -name "*.class" -delete
+
+fclean: clean
 	rm simulation.txt
 	rm sources.txt
 
-.PHONY: all sources sim clean
+.PHONY: all sources sim clean fclean
