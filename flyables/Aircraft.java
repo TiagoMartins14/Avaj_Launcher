@@ -27,4 +27,3 @@ public class Aircraft extends Flyable {
 	@Override
     public void updateConditions() {}
 }
-
